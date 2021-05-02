@@ -28,7 +28,7 @@ public class HoeCommand implements CommandExecutor {
 						if(p.getItemInHand().getItemMeta() == null) {return false;}
 						ItemMeta inHandMeta = p.getItemInHand().getItemMeta();
 						if(inHandMeta.getDisplayName() == null) {return false;}
-						if(inHandMeta.getDisplayName().contains(Utils.clr("&aHarvester Hoe")) && inHandMeta.getLore().toString().contains("this hoe is currently")) {
+						if(inHandMeta.getDisplayName().contains(Utils.clr("&aHarvester Hoe")) && inHandMeta.getLore().toString().contains("This hoe is currently")) {
 							p.setItemInHand(new ItemStack(Material.AIR));
 							p.setItemInHand(HoeStack.hoeStorage.get(0));
 						}
