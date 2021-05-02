@@ -1,0 +1,9 @@
+#HarvesterHoe Stack
+#Lore Must contain word crops
+#Black Listed Lore Phrase - This hoe is currently
+HarvesterHoe:
+ Fortune:
+  item: DIAMOND_HOE
+  name: "&aHarvester Hoe &7&l(&eCollection&7&l)"
+  lore:
+   - "&7Harvest crops to be collected or sold"

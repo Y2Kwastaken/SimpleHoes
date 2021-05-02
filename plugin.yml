@@ -1,0 +1,9 @@
+name: SimpleHoes
+main: me.y2k.simplehoes.SimpleHoes
+version: 1.0
+author: Y2K_
+depend: [Vault]
+commands:
+ simplehoes:
+  description: none
+  usage: /simplehoes
