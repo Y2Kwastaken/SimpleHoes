@@ -35,7 +35,7 @@ public class HoeCommand implements CommandExecutor {
 					}
 					//replace code here
 					break;
-				case "fix":
+				case "fix":	
 					if(p.hasPermission("simplehoe.fix")) {
 						if(p.getItemInHand() == null) {return false;}
 						if(p.getItemInHand().getItemMeta() == null) {return false;}
@@ -54,8 +54,10 @@ public class HoeCommand implements CommandExecutor {
 			if(args.length >= 2) {
 				switch(args[0]) {
 				case "give":
+					if(p.hasPermission("simplehoe.give")) {
 					Player target = Bukkit.getPlayer(args[1]);
 					target.getInventory().addItem(HoeStack.hoeStorage.get(0));
+					}
 					break;
 				default:
 					break;
